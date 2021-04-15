@@ -1,0 +1,25 @@
+[package]
+name = "aden"
+version = "0.1.0"
+authors = ["Khoa Nguyen <khoa.nguyen@restaff.no>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+lto = true
+opt-level = 3
+
+[dependencies]
+tokio = { version = "1", features = [ "full" ] }
+hyper = { version = "0.14", features = [ "full" ] }
+anyhow = { version = "1" }
+serde = { version = "1" }
+serde_json = { version = "1" }
+nom = { version = "6" }
+parking_lot = { version = "0.11" }
+dashmap = { version = "4", features = [ "rayon" ] }
+uuid = { version = "0.8" }
+crossbeam = { version = "0.8" }
+itertools = { version = "0.10" }
+rayon = { version = "1.5" }
