@@ -23,3 +23,6 @@ uuid = { version = "0.8" }
 crossbeam = { version = "0.8" }
 itertools = { version = "0.10" }
 rayon = { version = "1.5" }
+num_cpus = "1.13"
+httparse = "1.4"
+no-panic = "0.1"
